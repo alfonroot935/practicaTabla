@@ -1,0 +1,16 @@
+git init 		|para iniciar el repositorio nuevo de un proyecto, ubicarse en la carpeta
+git add . 		|para agregar los cambios para la captura de datos
+git reset . 		|revertir la captura de los datos para volverlos a bajar
+git commit -m "COMENTARIO" 
+			En este apartado es importante señalar que sino agregamso el -m "Comentario" 
+			nos saldra un apartado donde esta el archivo y tenemos que poner el comentario manualmente
+			para hacer eso tenemos que presionar la tecla i para comentar , una vez terminado presionamos
+			esc seguido de eso escribimos :wq! para salir del archivo con los cambios guardados
+git checkout -- . 	| para modificar el ultimo cambio guardado dentro del commit
+git log 		|ver las ramas que tiene el proyecto
+git commit --amend	|podemos modificar el archivo para cambiar el comentario
+git checkout -b NOMBRE_RAMA |poder hacer una nueva rama 
+git checkout master	|retorna a rama principal junto con los cambios que tiene la rama master
+git branch -d NOMBRE_RAMA |une la rama que se especifique y agrega los cambios a la rama master
+git push		|actualiza los cambios guardados en el comit al github
+git commit -am "comentario"	|este comando hace que podamos unir el "git add ." y el "git commit -m"
