@@ -5,7 +5,7 @@ export default class tabla3 {
     nombre: string;
     apellidos: string;
     materia: string;
-    imagen: object;
+    imagen: File;
     pagoMateria: boolean;
     numeroPago: number;
 
@@ -16,7 +16,7 @@ export default class tabla3 {
             this.nombre = item.nombre ??= ""
             this.apellidos = item.apellidos ??= ""
             this.materia = item.materia ??= ""
-            this.imagen = item.imagen ??= {}
+            this.imagen = item.imagen ??= null
             this.pagoMateria = item.pagoMateria = false
             this.numeroPago = item.numeroPago = 0
 
@@ -26,7 +26,7 @@ export default class tabla3 {
             this.nombre = ""
             this.apellidos = ""
             this.materia = ""
-            this.imagen = {}
+            this.imagen = undefined
             this.pagoMateria = false
             this.numeroPago = 0
 
